@@ -1,7 +1,7 @@
 <h1>MARP</h1>
 
 ## 💡 Introduction
-Core data components for the MARP project
+Core ui components for the MARP project
 
 ## 📜 License
 
