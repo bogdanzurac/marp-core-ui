@@ -1,3 +1,6 @@
+import dev.bogdanzurac.marp.core.ui.projects
+import dev.bogdanzurac.marp.core.ui.useArtifacts
+
 plugins {
     alias(libs.plugins.marp.core)
     alias(libs.plugins.marp.compose)
@@ -20,5 +23,8 @@ dependencies {
 
 
     implementation(libs.marp.core)
-    api(libs.marp.core.prompts)
+    api(
+        if (useArtifacts) libs.marp.core.prompts
+        else project(projects.corePrompts)
+    )
 }
